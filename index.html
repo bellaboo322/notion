@@ -569,10 +569,9 @@ body {
 }
 
 .buttons button {
-  border: 2px solid #e5ebf3;
+  border: 2pxtransparent;
   background-color: transparent;
-  color: #e5ebf3;
-  cursor: pointer;
+  color: transparent;
   padding: 13px 15px;
   border-radius: 50%;
   outline: none;
@@ -709,10 +708,7 @@ body {
     <div class="slide"></div>
     <div class="slide"></div>
     
-  </div>
-  <div class="buttons">
-    <button id="prev"><i class="fas fa-arrow-left"></i></button>
-    <button id="next"><i class="fas fa-arrow-right"></i></button>
+  
   </div>
   <!-- partial --> 
   <script>
@@ -720,7 +716,7 @@ body {
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
     const auto = true;
-    const intervalTime = 20000;
+    const intervalTime = 500;
     let slideInterval;
 
     const nextSlide = () => {
